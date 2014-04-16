@@ -2,7 +2,7 @@
 
 1. Get a GitHub account
 
-	```https://github.com/```
+	1. http://github.com/
 
 2. Create GitHub repository
 
@@ -48,7 +48,7 @@
 
     ```git commit -m "Inital Commit"```
     
-11. Add remote information for repository
+11. Add remote information for repository. Change user name as needed.
 
 	```git remote add origin https://github.com/djlerman/helloWorld.git```    
     

@@ -2,7 +2,7 @@
 
 1. Get a GitHub account
 
-	```https://github.com/```
+	```http://github.com/```
 
 2. Create GitHub repository
 

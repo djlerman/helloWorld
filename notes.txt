@@ -1,0 +1,77 @@
+04/13/14
+
+Hi, there is not much to github, but it can be confusing here is my quick start:
+GIthub is not the version control system. Git is the version control system, github is just a repo or online storage service, happens to be called github. GIT can be used with other repo services such as github and bitbucket.
+
+to get started you need GIT:
+http://git-scm.com/downloads    (when installing try to choose the command line option, instead of GUI. Its easier)
+
+once installed make sure to add git to your environmental variables.
+
+now get an account at github (you can get one at bitbucket or even host your own server, but thats more advanced just get github)
+
+now you are set, make a new folder and open up command prompt (or terminal if on mac or linux)
+
+lets start by playing around with an EXISTING project, this one:
+https://github.com/railstutorial/sample_app
+
+Basic commands:
+git clone URL
+this comand is used to clone a repo completely, usally used only once to get the files from a remote location for the first time, on the lower left of site there is a clone URL, use that so the command would look like this: 
+
+git clone https://github.com/railstutorial/sample_app.git
+
+press enter and it should now download the file. it should not ask for a password since the repo is public, lets pretend the repo is yours and you have permission to upload to that repo.
+
+you can now modify files and run the foll0wing command when you do some changes:
+
+git add filename
+git commit -m "Message goes here"
+git push
+
+SO what do they mean? lets pretend you are in a supermarket and the repo was your car and your groceries were your files.
+
+"git add" would be like adding items to your shopping cart, you can add stuff and remove stuff from basket at will, nobody will know.
+
+"git commit -m "message" " would be like taking your shopping cart to the checkout lane, all items are rung up and you are given a receipt, but items are still not in the car. You can still return the items but it might be a little more work.
+
+git push would be like finally taking all your items to the car, they are now live on the repo.
+
+lets say i just modified a file in the folder called Hello.txt and changed some content. I would go to the main folder int the cmd and type: 
+git add Hello.txt
+git commit -m " I just changed some stuff in the file, had some bugs"
+git push
+
+if another person is also modifying items you can do the command:
+git pull 
+and it will pull any changes from the repo to you hard-drive.
+
+tips:
+you can type:
+
+git add --all
+
+this will add all modified files into your shopping cart instead of one by one (its actual name is a Staging area)
+
+also if you only type:
+git commit
+instead of 
+git commit -m "message"
+
+you will be presented with a blank screen so that you can type your message, you can never commit without a message
+
+So what is the point of using all this??? each time you commit you are creating a small checkpoint, GIt is not saving a version of your old files but instead it is saving a record of what is changing. So if you ever mess up and need to go back to an earlier point, You can figure that one out, also play around with the following command:
+git status
+
+try it before adding something
+after
+before committing 
+after
+before pushing
+after, just so you can see what it does.
+
+each git project has a small (hidden it think) git file that keeps track of items, so if you do a git command on a normal folder it will give you a wtf error.
+to add version control to a normal non git project, go to the main root folder in cmd and type
+git init
+you should now know fairly enough to be able to know what to search or ask for. 
+Good night, - a bored person.

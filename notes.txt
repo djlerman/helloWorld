@@ -1,5 +1,7 @@
 04/13/14
 
+BY: Salvador Gutierrez -- suupersal@gmail.com
+
 Hi, there is not much to github, but it can be confusing here is my quick start:
 GIthub is not the version control system. Git is the version control system, github is just a repo or online storage service, happens to be called github. GIT can be used with other repo services such as github and bitbucket.
 
